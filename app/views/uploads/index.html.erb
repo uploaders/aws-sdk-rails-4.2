@@ -1,0 +1,6 @@
+<h1>All uploads</h1>
+<% @uploads.each do |upload| %>
+	<div>
+		<%= link_to upload.name, upload.url %>
+	</div>
+<% end %>
