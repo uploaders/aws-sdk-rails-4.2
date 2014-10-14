@@ -9,14 +9,14 @@ This is a basic rails app that demonstrates how to upload files using the [aws-s
 ### Create your Amazon Web Services (AWS) Account
 Before you get started with this app you will need to create an Amazon Web Services (AWS) account (if you don't already have one). AWS has a [free tier](http://aws.amazon.com/free/) that you can utilize which will suffice for this app. After creating your AWS account, log in.
 After creating your account and logging in go to your AWS Management console. It should look similar to this (as of October 2014):
-(https://www.dropbox.com/s/28q9x7zztfpkcor/Screenshot%202014-10-13%2013.36.05.png?dl=0
+<img src='https://dl.dropbox.com/s/28q9x7zztfpkcor/Screenshot%202014-10-13%2013.36.05.png?dl=0'>
 Under 'Storage & Content Delivery' click on 'S3'.
 
 ### Create a bucket
 After clicking on 'S3' under your management console, you will then be taken to a screen that looks similar to this:
-(https://www.dropbox.com/s/xexkkmq6dd0jz2u/Screenshot%202014-10-13%2013.38.05.png?dl=0)
+<img src='https://dl.dropbox.com/s/xexkkmq6dd0jz2u/Screenshot%202014-10-13%2013.38.05.png?dl=0'>
 This is your S3 dashbaord. You will need to create a bucket. All files that you upload to S3 are stored in buckets. I usually create one bucket per rails application that I build. Create your first bucket by clicking on the 'Create Bucket' button. I'll name mine 'my-first-bucket-tutorial' (bucket names must be unique across regions so pick a bucket name you like). Select the region that is closest to you. 
-(https://www.dropbox.com/s/4sogo7vjpkw3nmf/Screenshot%202014-10-13%2013.44.56.png?dl=0)
+<img src='https://dl.dropbox.com/s/4sogo7vjpkw3nmf/Screenshot%202014-10-13%2013.44.56.png?dl=0'>
 After you create your bucket it should show up in the list of buckets. Go ahead and click on that bucket. Nothing's there? Good. It should be empty because you haven't uploaded anything yet! Let's build a rails application that will upload files to your bucket.
 
 ## Getting Started
@@ -43,11 +43,12 @@ Run rake routes in your terminal. We've got some new routes now. Lets an add upl
 $ rails g controller Uploads new create index
 ```
 We now have routes, and a controller to handle requests to those routes
-`app/controllers/uploads_controller.rb`
+- `app/controllers/uploads_controller.rb`
+
 We also have some view files to handle those routes (create these if you don't already have them):
-`app/views/uploads/new.html.erb`
-`app/views/uploads/create.html.erb`
-`app/views/uploads/index.html.erb`
+- `app/views/uploads/new.html.erb`
+- `app/views/uploads/create.html.erb`
+- `app/views/uploads/index.html.erb`
 
 ### The upload form
 We're going to need a form to upload our files. Open up your `app/views/uploads/new.html.erb` file and type this in:
