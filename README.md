@@ -212,4 +212,4 @@ Put this view into your `app/views/uploads/index.html.erb`:
 <% end %>
 ```
 ## Done
-Start up the rails server and start uplooading files to see your work in action.
+Start up the rails server and start uplooading files to see your work in action. After you upload your file go to your index page and click on the link to go the file. You can see your files in S3 by logging into AWS, going to your S3 dashboard, and navigating into your bucket.
