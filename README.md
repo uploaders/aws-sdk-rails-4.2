@@ -141,7 +141,7 @@ obj = S3_BUCKET.objects[params[:file].original_filename]
 ```
 We can create objects in our S3 bucket using the following syntax:
 ```ruby
-bucket.objects['insert-your-key'];
+object = bucket.objects['insert-your-key'];
 ````
 We've already defined the bucket in the `aws.rb` initializer file we created earlier. So we can just use `S3_BUCKET` to reference what bucket we are trying to create an object in.
 Next we call the `objects['insert-your-key']` method to create the object in our bucket. The key we insert is the name it gets in the bucket.
