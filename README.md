@@ -75,7 +75,7 @@ After you have your security credentials be sure to set them in your environment
 $ export AWS_ACCESS_KEY_ID=INSERT_YOUR_ACCESS_KEY_ID_HERE
 ```
 ```
-$ export AWS_SECRET_KEY=INSERT_YOUR_SECRET_KEY_HERE
+$ export AWS_SECRET_ACCESS_KEY=INSERT_YOUR_SECRET_KEY_HERE
 ```
 **Keep your security credentials secure. Never expose your AWS_SECRET_KEY**
 
