@@ -96,7 +96,7 @@ AWS.config(
 
 S3_BUCKET =  AWS::S3.new.buckets[ENV['S3_BUCKET']]
 ```
-Now your application can talk to AWS.
+Since this is an initializer file don't forget to **restart** your application. Now your application can talk to AWS.
 
 ### Actually upload the file
 Type the following code into your controller. We'll go through this line by line after.
