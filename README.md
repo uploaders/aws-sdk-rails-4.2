@@ -20,7 +20,7 @@ This is your S3 dashbaord. You will need to create a bucket. All files that you 
 After you create your bucket it should show up in the list of buckets. Go ahead and click on that bucket. Nothing's there? Good. It should be empty because you haven't uploaded anything yet! Let's build a rails application that will upload files to your bucket.
 
 ## Getting Started
-If you haven't already update your Rails gem to version 4.2 you can find more information on that here: http://railsapps.github.io/updating-rails.html. After you have updated your Rails version, then we can continue.
+If you haven't already updated your Rails gem to version 4.2 you can find more information on that here: http://railsapps.github.io/updating-rails.html. The rest of this guide assumes you are running on Rails 4.2.
 
 First create your rails app:
 ```
