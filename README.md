@@ -204,6 +204,24 @@ $ rake db:migrate
 Great we're pretty close to done.
 ### Upload index
 Now lets create a view that shows all of the uploaded files we've saved.
+
+First go and gather all of the uploads in your controller `app/controllers/uploads_controller.rb`:
+```ruby
+class UploadsController < ApplicationController
+  def new
+  end
+
+  def create
+  	# ...
+  end
+
+  def index
+    @uploads = Upload.all
+  end
+end
+```
+
+
 Put this view into your `app/views/uploads/index.html.erb`:
 ```html
 <h1>All uploads</h1>
